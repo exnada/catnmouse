@@ -1,0 +1,11 @@
+build-essential
+libffi-dev
+libssl-dev
+wget
+sudo
+vim
+libpng-dev
+gnuplot
+flake8
+imagemagick
+ffmpeg

@@ -1,0 +1,185 @@
+{
+    "mazer-demo": {
+        "status": "active",
+        "results": {
+            "process": "new",
+            "data_directory": "data/",
+            "data_filename": "mazer-demo.csv"
+        },
+        "height": 24,
+        "width": 48,
+        "debug_level": 1,
+        "raw_memory": {
+            "type": "list",
+            "value": [ 3 ]
+        },
+        "nbr_snakes": {
+            "type": "single",
+            "value": 2,
+            "_type": "custom",
+            "_value": [[7,1]]
+        },
+        "random_seed": {
+            "type": "single",
+            "value": 500,
+            "_type": "scan",
+            "_min": 0,
+            "_max": 10
+        },
+        "compute_failed": false,
+        "shallow_dead_end_max_dist": 2,
+        "nbr_random_seeds": 1,
+        "annotate": "",
+        "comments": "Single random seed used for whole game. Player and snakes both see 2 steps ahead, each.",
+        "pre_sim_command": "rm -f pics/mazer_*.png",
+        "post_sim_image_processing": false,
+        "post_sim_movie_processing": false
+    },
+    "mazer-scan-publication": {
+        "status": "calculating",
+        "results": {
+            "process": "continue",
+            "data_directory": "data/",
+            "data_filename": "mazer-scan-20220512-031238.csv"
+        },
+        "height": 50,
+        "width": 50,
+        "debug_level": 0,
+        "raw_memory": {
+            "type": "list",
+            "value": [ 0, 1, 3, 5, 7, 9, 11, 13, 15, 17, 19, 21, 23, 25, 27, 29, 31, 33, 35, 37, 39, 41 ]
+        },
+        "nbr_snakes": {
+            "type": "scan",
+            "min": 0,
+            "max": 100
+        },
+        "random_seed": {
+            "type": "scan",
+            "min": 164,
+            "max": 500
+        },
+        "compute_failed": false,
+        "shallow_dead_end_max_dist": 2,
+        "nbr_random_seeds": 1,
+        "annotate": "",
+        "comments": "Single random seed used for whole game. Player and snakes both see 2 steps ahead, each.",
+        "process_data": {
+            "alternate_data_filename": "mazer-scan-20220512-031237.csv",
+            "fm_plot": {
+                "dpi": 600,
+                "colors": [ "#1f77b4", "#ff7f0e", "#2ca02c", "#d62728", "#9467bd", "#8c564b", "#e377c2", "#7f7f7f", "#bcbd22", "#17becf" ],
+                "snake_populations": [ 1, 2, 3, 10, 30 ],
+                "highlight_populations": [10],
+                "highlight_points": {
+                    "points": [
+                        {
+                            "col": 10,
+                            "x": 0
+                        },
+                        {
+                            "col": 10,
+                            "x": 1
+                        },
+                        {
+                            "col": 10,
+                            "x": 5
+                        }
+                    ],
+                    "marker": ".",
+                    "markersize": 30,
+                    "linewidth": 0,
+                    "color": "#ffe132"
+                },
+                "xlim": [ 0, 15 ],
+                "ylim": [ 0, 1 ],
+                "xticks": [ 0, 1, 5 ],
+                "legend": {
+                    "bbox_to_anchor" : [1, 0.44],
+                    "loc": "center right"
+                },
+                "size_inches" : [5, 4],
+                "grid": {
+                    "color": "gray",
+                    "axis": "x",
+                    "linestyle": "--",
+                    "linewidth": 0.5
+                }
+            },
+            "ns_plot": {
+                "dpi": 300,
+                "colors": [ "#1f77b4", "#ff7f0e", "#2ca02c", "#d62728", "#9467bd", "#8c564b", "#e377c2", "#7f7f7f", "#bcbd22", "#17becf" ],
+                "fm_populations": [ 0, 1, 5 ],
+                "highlight_points": {
+                    "points": [
+                        {
+                            "col": 0,
+                            "x": 10
+                        },
+                        {
+                            "col": 1,
+                            "x": 10
+                        },
+                        {
+                            "col": 5,
+                            "x": 10
+                        }
+                    ],
+                    "marker": ".",
+                    "markersize": 20,
+                    "linewidth": 0,
+                    "color": "#ffe132"
+                },
+                "xlim": [ 0, 40 ],
+                "ylim": [ 0, 1 ],
+                "xticks": [ 0, 1, 4, 10, 20, 30 ],
+                "legend": {
+                    "loc": 1
+                },
+                "grid": {
+                    "color": "gray",
+                    "axis": "x",
+                    "linestyle": "--",
+                    "linewidth": 0.5
+                }
+            }
+        },
+        "pre_sim_command": "rm -f pics/mazer_*.png",
+        "post_sim_image_processing": false,
+        "post_sim_movie_processing": false
+    },
+    "mazer-scan-publication_old": {
+        "status": "done",
+        "results": {
+            "process": "continue",
+            "data_directory": "data/",
+            "data_filename": "mazer-scan-20220512-031238.csv"
+        },
+        "height": 50,
+        "width": 50,
+        "debug_level": 0,
+        "raw_memory": {
+            "type": "scan",
+            "min": 0,
+            "max": 1
+        },
+        "nbr_snakes": {
+            "type": "scan",
+            "min": 0,
+            "max": 1
+        },
+        "random_seed": {
+            "type": "scan",
+            "min": 0,
+            "max": 5
+        },
+        "compute_failed": false,
+        "shallow_dead_end_max_dist": 2,
+        "nbr_random_seeds": 1,
+        "annotate": "Prioritizing deep ends > 2",
+        "comments": "Single random seed used for whole game. Player and snakes both see 2 steps ahead, each. This is the backup file of timestamp 0002111.",
+        "pre_sim_command": "rm -f pics/mazer_*.png",
+        "post_sim_image_processing": true,
+        "post_sim_movie_processing": false
+    }
+}
