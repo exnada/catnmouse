@@ -3,6 +3,7 @@
 Maze solver.
 
 ## How to run the demo
+- run: `make build` to build the docker container (first time only)
 - run: `make demo` 
 - movie results are in: `src/mpeg/`
 
